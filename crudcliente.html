@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <link rel="shortcut icon" href="images/icon-log.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/icon-log.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=".col-md-8">
+					<div class="login-box">
+                        <select id="basic" class="selectpicker show-tick form-control">
+							<option>Administrador</option>
+						</select>
+                    </div>
+                    <div class=".col-md-8">
+                        <div class="login-box">
+                            <input type="submit Button-2" value="Cerrar sesión" id="basic"  class="selectpicker show-tick form-control" onclick="Cerrar()">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+     
+    </div>
+  
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a href="index.html"><img src="images/logo1.png" align="left" width="213" height="213"></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Configuración</a>
+                            <ul class="dropdown-menu">
+								<li><a href="crudarticulo.html">Alta Producto</a></li>
+								<li><a href="tipoproducto.html">Tipo Producto</a></li>
+                                <li><a href="crudpais.html">Alta País</a></li>
+                                <li><a href="crudprov.html">Alta Provincia</a></li>
+                                <li><a href="crudloc.html">Alta Localidad</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Tienda</a>
+                            <ul class="dropdown-menu">
+								<li><a href="shopalmacen.html">Almacén</a></li>
+								<li><a href="shopbebida.html">Bebidas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+        
+                        <li class="side-menu">
+							<a href="#">
+								<i class="fa fa-shopping-bag"></i>
+								<span class="badge"></span>
+								<p>Carrito</p>
+							</a>
+						</li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#"></a></h6>
+                            <p><span class="price"></span></p>
+                        </li>
+                        
+                        <li class="total">
+                            <a href="#" class="btn btn-default hvr-hover btn-cart"> Ver Carrito</a>
+                            <span class="float-right"><strong>Total</strong></span>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Wishlist  -->
+    <div class="wishlist-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th> Apellido y Nombre </th>
+                                    <th> Domicilio </th>
+                                    <th> Email </th>
+                                    <th> Celular </th>
+                                    <th> País</th>
+                                    <th> Provincia </th>
+                                    <th> Agregar </th>
+                                    <th> Modificar </th>
+                                    <th> Eliminar</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="submit Button-2" id="basic"  class="selectpicker show-tick form-control">
+                                    </td>
+                                    <td>
+                                        <input type="submit Button-2" id="basic"  class="selectpicker show-tick form-control">
+                                    </td>
+                                    <td>
+                                        <input type="submit Button-2" id="basic"  class="selectpicker show-tick form-control">
+                                    </td>
+                                    <td>
+                                        <input type="submit Button-2" id="basic"  class="selectpicker show-tick form-control">
+                                    </td>
+                                    <td>
+                                        <select name="selectPais">
+                                            <option value="pais2" selected>Bolivia</option>
+                                            <option value="pais">Argentina</option>
+                                          </select>
+                                    </td>
+                                    <td>
+                                        <select name="selectProv">
+                                            <option value="prov1">Tucumán</option>
+                                            <option value="prov2" selected>Catamarca</option>
+                                            <option value="prov3" selected>Salta</option>
+                                          </select>
+                                    </td>
+                                    <td>
+                                        <a class="btn hvr-hover" href="#">Agregar</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn hvr-hover" href="#">Modificar</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn hvr-hover" href="#">Eliminar</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Wishlist -->
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-1.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-2.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-3.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-4.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-5.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-6.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-7.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-8.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-9.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-5.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+						
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							
+						</div>
+					</div>
+				</div>
+				<hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>Quiénes somos</h4>
+                            <p>Somos una tienda virtual que te ofrece una forma simple, rápida y segura para poder comprar todo tipo de alimentos, a precios competitivos, y con el mejor servicio de entrega.</p> 
+						
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Información</h4>
+                            <ul>
+                                <li><a href="#"> Inicio</a></li>
+                                <li><a href="#"> Productos</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contacto</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Dirección: San Miguel de Tucumán <br> Tucumán - Argentina</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Teléfono: <a>+549 3865-317000</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a>floopis.rivas2@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- End Footer  -->
+
+ <!-- Start copyright  -->
+ <div class="footer-copyright">
+    <p class="footer-company">Todos los derechos reservados. &copy; 2022 <a>Food Supply 24hs</a> Design By :
+        <a href="https://www.linkedin.com/in/florencia-rivas/">Rivas Florencia</a></p>
+</div>
+<!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

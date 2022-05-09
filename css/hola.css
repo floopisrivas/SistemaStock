@@ -1,0 +1,88 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+.medio
+{
+    position: relative;
+    right: -80px;
+    top: -475px;
+}
+
+.medio button
+{
+    background-color: orange;
+    font-size: 20px;
+    cursor: pointer;
+}
+.medio a
+{
+    background-color: orange;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.medio2
+{
+    position: relative;
+    right: -80px;
+    color: white;
+}
+
+.linkedin
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+* 
+{
+    margin:0;
+    padding:0;
+}
+
+nav
+{  
+    width:270px;
+    max-height:0px;
+    overflow:hidden;
+    transition: 1s all; 
+}
+
+.mostrar 
+{
+    max-height:250px;
+}
+
+nav ul 
+{
+    list-style:none;
+}
+
+nav ul li a
+{
+    text-decoration:none;
+    display:block;
+    line-height:20px;
+    border-bottom:1px solid #222;
+    background-color:#5e726b;
+    color:#222;
+    font-size:1.2em;
+    padding:10px;
+}
+
+nav ul li a:hover 
+{
+    background-color:#222;
+    color:#fff;
+}
+
+.menu 
+{
+    padding:20px;
+    background-color:#222;
+    color:#fff;
+    width:15%;
+    cursor:pointer;   
+}

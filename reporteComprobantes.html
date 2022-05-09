@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reportee.css">
+    <!--Libreria Reportes-->
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <center>
+            <h1><b>Reporte de Comprobantes</b></h1>
+            <br>
+        </center>
+        <table id = "tablaComrpobantes">
+            <thead>
+                <tr>
+                    <th>Nro.Comprobante</th><th>Fecha</th><th>Cliente</th><th>Ariculo</th><th>Cantidad</th><th>Total</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <center>
+        <button onclick="imprimirReporte()">Descargar</button>
+        <button onclick="cargarTabla()">Actualizar</button>
+        <br><br>
+        <label>Flitro por Fecha</label>
+        <input type="checkbox" id="filtroFecha">
+        <br><br>
+        <label>Fecha Desde</label>
+        <input type="date" id="fechaMin">
+        <label>.            .</label>
+        <label> Fecha Hasta</label>
+        <input type="date" id="fechaMax">
+        <br><br>
+        <label>Flitro por Articulo</label>
+        <input type="checkbox" id="filtroArticulo">
+        <br><br>
+        <label>Articulo:</label>
+        <select name="select" id="cajaArticulo"></select>
+        <br><br>
+        <label>Flitro por Cliente</label>
+        <input type="checkbox" id="filtroCliente">
+        <br><br>
+        <label>Cliente:</label>
+        <select name="select" id="cajaCliente"></select>
+        
+    </center>
+    
+    <script src="js/reporteComprobantes.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comprobantes</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hola.css">
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <div class="menu" id="menu">Ubicaciones</div>
+    <nav id="navega">
+        <ul>
+            <li><a href="pais.html">Pais</a></li> 
+            <li><a href="provincia.html">Provincia</a></li> 
+            <li><a href="localidad.html">Localidad</a></li> 
+            <li><a href="departamento.html">Departamento</a></li>
+        </ul>
+    </nav>
+    <div class="menu" id="configuracion" onclick="configuracion()">Configuracion</div>
+    <div class="menu" id="clientes" onclick="clientes()">Clientes</div>
+    <div class="menu" id="articulos" onclick="articulos()">Articulos</div>
+    <div class="menu" id="tipoArticulo" onclick="tipoArticulo()">Tipos de articulos</div>
+    <div class="menu" id="ventas" onclick="ventas()">Ventas</div>
+    <div class="menu" id="comprobantes" onclick="comprobantes()">Comprobantes de Venta</div>
+    <div class="menu" id="salir" onclick="salir()">Salir</div>
+    
+    
+    <div class="medio">
+        <center>
+            <h1 >Comprobantes</h1>
+            <br><br>
+            <a href="bienvenido.html">Volver</a> 
+            <!--<a style="background-color: black;" href="reporteComprobantes.html">Reporte</a>-->
+            <a href="reporteComprobantes.html">Reporte</a>
+            <br><br>
+            <div id="ListaComprobantes"></div>
+        </center>
+    </div>
+
+    <script src="js/comprobantes.js"></script>
+</body>
+<script>
+    document.getElementById("menu").addEventListener("click",function()
+    {
+        document.getElementById("navega").classList.toggle("mostrar");
+    });
+
+    function salir()
+    {
+        this.location.href = "login.html";
+    }
+
+    function configuracion()
+    {
+        this.location.href = "configuracion.html";
+    }
+
+    function clientes()
+    {
+        this.location.href = "clientes.html";
+    }
+
+    function articulos()
+    {
+        this.location.href = "articulos.html";
+    }
+
+    function tipoArticulo()
+    {
+        this.location.href = "tipoArticulos.html";
+    }
+
+    function ventas()
+    {
+        this.location.href = "ventas.html";
+    }
+
+    function comprobantes()
+    {
+        this.location.href = "comprobantes.html";
+    }
+
+    function salir()
+    {
+        this.location.href = "login.html";
+    }
+</script>
+</html>

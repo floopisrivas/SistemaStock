@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="menu" id="menu">Ubicaciones</div>
+
+    <div class="menu" id="salir" onclick="salir()">Salir</div>
+
+    <div class="medio">
+        <center>
+            <h1>Pais</h1>
+            <br><br><br>
+            <label>Nombre del Pais</label><br>
+            <input type="text" id="paisIngresado">
+            <br><br>
+    
+            <label>Nuevo Nombre</label><br>
+            <input type="text" id="nuevoNombre">
+            <br><br>
+            <button id="btnAgregarPais" onclick="agregarPais()">Agregar</button>
+            <button id="btnActualizarPais" onclick="actualizarPais()">Actualizar</button>
+            <button id="btnModificarPais" onclick="modificarPais()">Modificar</button>
+            <button id="btnBorrarPais" onclick="borrarPais()">Borrar</button>
+            <br><br><br>
+            <div id="listaPaises"></div>   
+        </center>
+    </div>
+    <script src="js/ubicaciones.js"></script>
+</body>
+
+
+
+<script>
+
+
+    document.getElementById("menu").addEventListener("click",function()
+    {
+        document.getElementById("navega").classList.toggle("mostrar");
+    });
+
+    function salir()
+    {
+        this.location.href = "login.html";
+    }
+
+    function configuracion()
+    {
+        this.location.href = "configuracion.html";
+    }
+
+    function clientes()
+    {
+        this.location.href = "clientes.html";
+    }
+
+    function articulos()
+    {
+        this.location.href = "articulos.html";
+    }
+
+    function tipoArticulo()
+    {
+        this.location.href = "tipoArticulos.html";
+    }
+
+    function ventas()
+    {
+        this.location.href = "ventas.html";
+    }
+
+    function comprobantes()
+    {
+        this.location.href = "comprobantes.html";
+    }
+
+    function salir()
+    {
+        this.location.href = "login.html";
+    }
+</script>
+</html>

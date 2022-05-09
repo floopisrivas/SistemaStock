@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reporte Articulos</title>
+    <link rel="stylesheet" href="css/reportee.css">
+    <!--Libreria Reportes-->
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <center>
+            <h1><b>Reporte de Articulos</b></h1>
+            <br>
+        </center>
+        <table id = "tablaArticulos">
+            <thead>
+                <tr>
+                    <th>Codigo</th><th>Descripcion</th><th>Stock Actual</th><th>Precio Venta</th><th>Precio Costo</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <center>
+        <button onclick="imprimirReporte()">Descargar</button>
+        <button onclick="imprimirReporteReponer()">Descargar Articulos a Reponer</button>
+    </center>
+    
+    <script src="js/reporteArticulos.js"></script>
+</body>
+</html>

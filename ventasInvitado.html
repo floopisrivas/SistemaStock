@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ventas</title>
+    <link rel="stylesheet" href="css/hola.css">
+</head>
+<body>
+    <div class="menu" id="ventas" onclick="ventas()">Ventas</div>
+    <div class="menu" id="salir" onclick="salir()">Salir</div>
+
+    <div class="medio2" style="color:white">
+        <center>
+            <h1>Ventas</h1>
+            <br>
+
+            <label>Nro Comprobante</label> <input type="number" id="nroComprobante" readonly="readonly">
+            <br><br>
+        
+            <label>Seleccionar Cliente</label> <select id="cajaCliente"></select>
+            <br><br><br>
+
+            <label>Seleccionar Articulo</label> <select id="cajaArticulo"></select>
+            <br><br>
+
+            <label>Cantidad de Articulos</label> <input type="number" id="cantidad">
+            <button id="agregar" onclick="agregarAlCarrito()">Agregar al carrito</button>
+            <br><br>
+        
+            <label>Total Articulo: <label id="totalArticulo"></label>  </label>
+            <br><br>
+
+            <div id="carrito"></div>
+            <br><br>
+
+            <button id="comprarArticulo" onclick="comprar()">Comprar</button>
+            <br><br>
+            <label>Total A Pagar: <label id="totalFinal"></label>  </label>
+        </center>
+    </div>
+    <script src="js/ventas.js"></script>
+</body>
+<script>
+    function salir()
+    {
+        this.location.href = "login.html";
+    }
+
+    function ventas()
+    {
+        this.location.href = "ventasInvitado.html";
+    }
+</script>
+</html>
